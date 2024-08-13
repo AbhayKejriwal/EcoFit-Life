@@ -4,28 +4,43 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
     background-color: #ffffff;
     padding: 10px 20px;
     color: #4aea6a;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-header nav .logo {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .site-name {
     font-size: 1.5em;
     font-weight: bold;
+    color: #4aea6a;
+    text-decoration: none;
+    margin-left: 10px;
 }
 
 #logo {
-    background: url(/images/logo.png) 0 0 no-repeat;
     width: 55px;
     height: 55px;
 }
@@ -33,24 +48,35 @@ header nav .logo {
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 header nav ul li a {
     color: #ebad27;
     text-decoration: none;
     font-size: large;
+    transition: color 0.3s ease;
 }
+header nav ul li a:hover {
+    color: #4aea6a;
+}
+main {
+    margin-top: 80px;
 
-.hero {
-    background: url('header-banner.svg') no-repeat center center/cover;
-    height: 600px;
+}
+.hero, .what-we-do, .featured-articles {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.hero {
+    background: url('header-banner.svg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    
 }
 
 .hero-content h1 {
@@ -60,52 +86,51 @@ header nav ul li a {
     text-align: center;
     color: gold;
 }
-
-.hero-content h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    text-align: center;
-
-}
-
-.hero-content button {
+.cta-button {
     padding: 10px 20px;
     background-color: #f7b733;
     border: none;
     color: #fff;
     cursor: pointer;
-    border-radius: 5px;
-    width: 150px;
-    height: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.hero-content button:hover {
+.hero-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.cta-button:hover {
     background-color: #ebad27;
 }
 
-.latest-articles {
-    padding: 20px;
-    background-color: #fff;
+.what-we-do {
+    background-color: #e6f7ff;
 }
 
-.latest-articles h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.featured-articles {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .articles-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .article-card {
-    background-color: #eaeaea;
-    padding: 15px;
-    width: 300px;
+    background-color: #fff;
+    padding: 25px;
+    width: calc(33.333% - 10px);
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -114,10 +139,107 @@ header nav ul li a {
     max-width: 100%;
     border-radius: 5px;
 }
+.article-card h3 {
+    padding: 15px;
+    margin: 0;
+}
+.article-card p {
+    padding: 0 15px 15px;
+}
+
+.article-card a {
+    display: inline-block;
+    margin: 0 15px 15px;
+    padding: 10px 15px;
+    background-color: #4aea6a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4aea6a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 250px;
+}
+
+#newsletter-form button {
+    padding: 10px 20px;
+    background-color: #4aea6a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .article-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .article-card {
+        width: 100%;
+    }
 }

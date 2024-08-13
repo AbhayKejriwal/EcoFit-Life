@@ -3,47 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - Sustainable & Healthy Lifestyle Guide</title>
+    <title>Articles - EcoFit Life</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar">
-            <div class="logo">Ecofit Life</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo"><img id="logo" src="logo.png" alt="EcoFit Life Logo"></a>
+                <a href="index.html" class="site-name">EcoFit Life</a>
+            </div>
+            <ul>
                 <li><a href="articles.html">Articles</a></li>
                 <li><a href="fitness-tips.html">Fitness Tips</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Articles Section -->
-    <section class="featured-articles">
-        <h2>Articles</h2>
-        <div class="articles-container">
-            <article class="article-card">
-                <img src="path/to/image1.jpg" alt="Article Image">
-                <h3>How to Eat Sustainably</h3>
-                <p>Discover ways to make your diet more eco-friendly and healthy.</p>
-                <a href="#">Read More</a>
-            </article>
-            <article class="article-card">
-                <img src="path/to/image2.jpg" alt="Article Image">
-                <h3>Top 10 Fitness Tips</h3>
-                <p>Get fit and stay healthy with our top tips for a balanced lifestyle.</p>
-                <a href="#">Read More</a>
-            </article>
-            <!-- Add more articles as needed -->
-        </div>
-    </section>
+    <main>
+        <!-- Articles Hero Section -->
+        <section class="page-hero">
+            <h1>Explore Our Articles</h1>
+            <p>Discover insights on sustainable living and healthy lifestyles.</p>
+        </section>
+
+        <!-- Articles Section -->
+        <section class="featured-articles">
+            <div class="articles-container">
+                <!-- Articles will be dynamically added here using JavaScript -->
+            </div>
+            <div class="pagination">
+                <button id="prev-page" disabled>Previous</button>
+                <span id="current-page">1</span>
+                <button id="next-page">Next</button>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest articles and tips.</p>
+            <form id="newsletter-form">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Sustainable & Healthy Lifestyle Guide. All rights reserved.</p>
+        <p>&copy; 2024 EcoFit Life. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
