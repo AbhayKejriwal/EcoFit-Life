@@ -34,12 +34,25 @@
         <!-- Articles Section -->
         <section class="featured-articles">
             <div class="articles-container">
-                <!-- Articles will be dynamically added here using JavaScript -->
-            </div>
-            <div class="pagination">
-                <button id="prev-page" disabled>Previous</button>
-                <span id="current-page">1</span>
-                <button id="next-page">Next</button>
+                <article class="article-card">
+                    <img src="path/to/image1.jpg" alt="Article 1">
+                    <h3>Article 1</h3>
+                    <p>Description 1</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="article-card">
+                    <img src="path/to/image2.jpg" alt="Article 2">
+                    <h3>Article 2</h3>
+                    <p>Description 2</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="article-card">
+                    <img src="path/to/image3.jpg" alt="Article 3">
+                    <h3>Article 3</h3>
+                    <p>Description 3</p>
+                    <a href="#">Read More</a>
+                </article>
+                <!-- Add more articles as needed -->
             </div>
         </section>
 
@@ -56,9 +69,25 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 EcoFit Life. All rights reserved.</p>
+        <div class="footer-content">
+            <img id="footer-logo" src="logo.png" alt="EcoFit Life Logo">
+            <div class="address-author-wrapper">
+                <address>
+                    123 Green Lane<br>
+                    EcoCity, Earth<br>
+                    98765
+                </address>
+                <div class="author-info">
+                    <div class="author-column">
+                        <p>Author 1<br>123-456-7890</p>
+                    </div>
+                    <div class="author-column">
+                        <p>Author 2<br>098-765-4321</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
+    
 </body>
 </html>
