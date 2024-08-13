@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Tahoma, Courier, monospace;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -24,6 +24,12 @@ header nav .logo {
     font-weight: bold;
 }
 
+#logo {
+    background: url(/images/logo.png) 0 0 no-repeat;
+    width: 55px;
+    height: 55px;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -31,7 +37,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #29e07b;
+    color: #ebad27;
     text-decoration: none;
 }
 
@@ -43,13 +49,13 @@ header nav ul li a {
     align-items: center;
     color: #fff;
     text-align: center;
+    
 }
 
 .hero-content h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: green;
-    font-family: var(--bc2024-font-text);
 }
 
 .hero-content button {
