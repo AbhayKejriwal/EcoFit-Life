@@ -1,7 +1,7 @@
 // Array of article objects
 const articles = [
-    { title: 'Article 1', description: 'Description 1', image: 'path/to/image1.jpg' },
-    { title: 'Article 2', description: 'Description 2', image: 'path/to/image2.jpg' },
+    { title: 'Article 1', description: 'Description 1', image: 'tobias-weinhold-hXPomXrpUP0-unsplash.jpg' },
+    { title: 'Article 2', description: 'Description 2', image: 'noah-buscher-x8ZStukS2PM-unsplash.jpg' },
     { title: 'Article 3', description: 'Description 3', image: 'path/to/image3.jpg' },
     { title: 'Article 4', description: 'Description 4', image: 'path/to/image4.jpg' },
     { title: 'Article 5', description: 'Description 5', image: 'path/to/image5.jpg' },

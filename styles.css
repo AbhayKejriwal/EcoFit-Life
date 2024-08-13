@@ -115,12 +115,31 @@ main {
 }
 
 .what-we-do {
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.what-we-do-image {
+    width: 40%; /* Adjusted to a smaller size */
+    max-width: 300px; /* Limit the maximum width */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
 .featured-articles {
     background-color: #4aea6a;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
