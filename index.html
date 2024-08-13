@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoFit Life</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        document.querySelector('.hero-content button').addEventListener('click', function() {
-        window.location.href = '#featured-articles';});
-    </script>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <nav>
-            <a href="" class="logo"><img id="logo" src="logo.png"></a>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo"><img id="logo" src="logo.png" alt="EcoFit Life Logo"></a>
+                <a href="index.html" class="site-name">EcoFit Life</a>
+            </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <!-- Removed Home link, using site name to redirect to homepage -->
                 <li><a href="articles.html">Articles</a></li>
                 <li><a href="fitness-tips.html">Fitness Tips</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -30,12 +29,12 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Embrace a Sustainable and Healthy Lifestyle</h1>
-            <button>Get Started</button>
+            <button id="get-started-btn">Get Started</button>
         </div>
     </section>
 
     <!-- Featured Articles Section -->
-    <section class="featured-articles">
+    <section class="featured-articles" id="featured-articles">
         <h2>Featured Articles</h2>
         <div class="articles-container">
             <article class="article-card">
