@@ -44,7 +44,7 @@ header nav ul li a {
 
 .hero {
     background: url('header-banner.svg') no-repeat center center/cover;
-    height: 400px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,9 +54,18 @@ header nav ul li a {
 }
 
 .hero-content h1 {
-    font-size: 2.5em;
+    font-size: 5em;
+    margin-top: auto;
     margin-bottom: 20px;
-    color: green;
+    text-align: center;
+    color: gold;
+}
+
+.hero-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+
 }
 
 .hero-content button {
@@ -65,14 +74,23 @@ header nav ul li a {
     border: none;
     color: #fff;
     cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
 }
 
-.featured-articles {
+.hero-content button:hover {
+    background-color: #ebad27;
+}
+
+.latest-articles {
     padding: 20px;
     background-color: #fff;
 }
 
-.featured-articles h2 {
+.latest-articles h2 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -95,31 +113,6 @@ header nav ul li a {
 .article-card img {
     max-width: 100%;
     border-radius: 5px;
-}
-
-.fitness-tips {
-    background-color: #2b7a3f;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-}
-
-.fitness-tips h2 {
-    margin-bottom: 15px;
-}
-
-.fitness-tips ul {
-    list-style: none;
-    padding: 0;
-}
-
-.fitness-tips ul li {
-    margin: 10px 0;
-}
-
-.fitness-tips ul li a {
-    color: #f7b733;
-    text-decoration: none;
 }
 
 footer {
