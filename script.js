@@ -1,7 +1,7 @@
 // Array of article objects
 const articles = [
-    { title: 'Article 1', description: 'Description 1', image: 'tobias-weinhold-hXPomXrpUP0-unsplash.jpg' },
-    { title: 'Article 2', description: 'Description 2', image: 'noah-buscher-x8ZStukS2PM-unsplash.jpg' },
+    { title: 'The Conservation of Red Pandas', description: 'The efforts being made to protect red pandas from extinction and how you can help', image: 'animals-1852823_640.jpg' },
+    { title: 'Capturing the Perfect Sunset', description: 'Tips and techniques for photographers and nature lovers alike on how to capture the perfect sunset shot in a forest setting', image: 'mountains-5946500_640.jpg' },
     { title: 'Article 3', description: 'Description 3', image: 'path/to/image3.jpg' },
     { title: 'Article 4', description: 'Description 4', image: 'path/to/image4.jpg' },
     { title: 'Article 5', description: 'Description 5', image: 'path/to/image5.jpg' },
