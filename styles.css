@@ -238,6 +238,24 @@ main {
     background-color: #35d400;
 }
 
+.resources {
+    background-color: #f7f7f7;
+    padding: 5%;
+}
+
+.about {
+    background-color: #f7f7f7;
+    padding-left: 5%;
+    padding-top: 8%;
+    padding-right: 5%;
+}
+
+.about p {
+    text-align: justify;
+    width: 100%;
+    max-width: 1000px;
+}
+
 .pagination {
     margin-top: 20px;
     display: flex;
