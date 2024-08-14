@@ -148,27 +148,41 @@ main {
 
 .featured-articles {
     background-color: #009c03;
-    padding: 40px 20px;
-    border-radius: 8px;
+    padding: 0 3%;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: auto;
+    width: 100%;
+    max-width: auto;
 }
 
 .articles-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    padding: 5%;
     justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-
+    justify-content: space-around;
+    gap: 20px;
+    width: 95%;
 }
 
 .article-card {
     background-color: #fff;
     padding: 25px;
-    width: calc(33.333% - 10px);
+    width: 25%;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+    .article-card {
+        width: 35%;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-card {
+        width: 60%;
+    }
 }
 
 .article-card img {
@@ -176,18 +190,17 @@ main {
     border-radius: 5px;
 }
 .article-card h3 {
-    padding: 15px;
-    margin: 0;
+    padding: 5px;
 }
 .article-card p {
-    padding: 0 15px 15px;
+    padding: 0 5px;
 }
 
 .article-card a {
     display: inline-block;
     margin: 0 15px 15px;
-    padding: 10px 15px;
-    background-color: #4aea6a;
+    padding: 5px 10px;
+    background-color: #009c03;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -238,13 +251,16 @@ main {
     background-color: #35d400;
 }
 
+.fitness-tips {
+    margin-top: 5%;
+    padding: 2% 5%;
+}
+
 .resources {
-    background-color: #f7f7f7;
-    padding: 5%;
+    padding: 1% 5%;
 }
 
 .about {
-    background-color: #f7f7f7;
     padding-left: 5%;
     padding-top: 8%;
     padding-right: 5%;
@@ -264,9 +280,13 @@ main {
     gap: 10px;
 }
 
+.explore {
+    padding: 2% 5%;
+}
+
 .newsletter {
     background-color: #f7f7f7;
-    padding: 40px 20px;
+    padding: 3% 20px;
     text-align: center;
 }
 
@@ -279,12 +299,15 @@ main {
 
 #newsletter-form input[type="email"] {
     padding: 10px;
-    width: 250px;
+    width: 280px;
+    border-radius: 5px;
+    border-width: 1px;
 }
 
 #newsletter-form button {
     padding: 10px 20px;
-    background-color: #4aea6a;
+    border-radius: 5px;
+    background-color: #009c03;
     color: white;
     border: none;
     cursor: pointer;
@@ -298,6 +321,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #footer-logo {
@@ -337,14 +364,3 @@ footer .address-author-wrapper {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .article-card {
-        width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 480px) {
-    .article-card {
-        width: 100%;
-    }
-}
