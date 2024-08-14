@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #333; 
+    background-color: #fff; 
     padding: 10px 20px;
     color: #fff;
     position: fixed;
@@ -36,11 +36,12 @@ header nav {
 }
 
 .logo-container .site-name {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
-    color: #4aea6a;
+    color: #009c03;
     text-decoration: none;
     margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 #logo {
@@ -55,13 +56,13 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #ebad27;
+    color: #009c03;
     text-decoration: none;
-    font-size: large;
+    font-size: 1.5em;
     transition: color 0.3s ease;
 }
 header nav ul li a:hover {
-    color: #4aea6a;
+    color: #35d400;
 }
 main {
     flex: 1;
@@ -79,9 +80,10 @@ main {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+
 }
 .hero {
-    background: url('header-banner.svg') no-repeat center center/cover;
+    background: url('hero-banner.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
 }
@@ -91,16 +93,18 @@ main {
     margin-top: auto;
     margin-bottom: 20px;
     text-align: center;
-    color: gold;
+    color: #fff;
 }
 .cta-button {
     padding: 10px 20px;
-    background-color: #f7b733;
+    background-color: #009c03;
+    font-weight: bold;
     border: none;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
+    border-radius: 5px;
 }
 
 .hero-content h3 {
@@ -111,12 +115,12 @@ main {
 
 
 .cta-button:hover {
-    background-color: #ebad27;
+    background-color: #35d400;
 }
 
 .what-we-do {
     background-color: #ffffff; /* White background */
-    padding: 40px 20px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,20 +129,25 @@ main {
 .what-we-do-content {
     display: flex;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .what-we-do-image {
-    width: 40%; /* Adjusted to a smaller size */
-    max-width: 300px; /* Limit the maximum width */
-    height: auto;
+    width: 50%; /* Adjusted to a smaller size */
+    max-width: 400px; /* Limit the maximum width */
     margin-right: 20px;
     border-radius: 10px;
 }
 
+.what-we-do-text {
+    max-width:50%; /* Adjusted to a smaller size */
+    text-align: justify;
+    align-self: right;
+}
+
 .featured-articles {
-    background-color: #4aea6a;
+    background-color: #009c03;
     padding: 40px 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -149,8 +158,9 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .article-card {
@@ -200,8 +210,7 @@ main {
     margin-bottom: 5px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -262,12 +271,16 @@ footer {
 }
 
 #footer-logo {
-    width: 150px; /* Bigger logo */
+    width: 10em; /* Bigger logo */
+    align-self: left;
 }
 
 footer address {
-    color: red;
-    margin-left: 20px;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 1%;
+    vertical-align: middle;
+    align-self: center;
 }
 
 .author-info {
@@ -293,6 +306,7 @@ footer .address-author-wrapper {
     justify-content: space-between;
     width: 100%;
 }
+
 @media (max-width: 768px) {
     .article-card {
         width: calc(50% - 20px);
