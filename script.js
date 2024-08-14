@@ -1,4 +1,3 @@
-// Array of article objects
 const articles = [
     { title: 'The Conservation of Red Pandas', description: 'The efforts being made to protect red pandas from extinction and how you can help', image: 'animals-1852823_640.jpg' },
     { title: 'Capturing the Perfect Sunset', description: 'Tips and techniques for photographers and nature lovers alike on how to capture the perfect sunset shot in a forest setting', image: 'mountains-5946500_640.jpg' },
@@ -58,14 +57,11 @@ document.getElementById('next-page').addEventListener('click', () => {
     }
 });
 
-// Initialize the page
 displayArticles();
 
-// Handle newsletter form submission
 document.getElementById('newsletter-form').addEventListener('submit', (e) => {
     e.preventDefault();
     const email = document.getElementById('email').value;
-    // Here you would typically send the email to your server
     console.log(`Subscribed: ${email}`);
     alert('Thank you for subscribing!');
     document.getElementById('email').value = '';
