@@ -195,15 +195,20 @@ main {
 
 main {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.get-in-touch {
     padding-left: 5%; 
+}
+
+.contact-form-section {
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .contact-form {
     display: flexbox;
-    gap: 30px;
     max-width: 600px;
 }
 
