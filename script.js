@@ -2,23 +2,11 @@
 const articles = [
     { title: 'The Conservation of Red Pandas', description: 'The efforts being made to protect red pandas from extinction and how you can help', image: 'animals-1852823_640.jpg' },
     { title: 'Capturing the Perfect Sunset', description: 'Tips and techniques for photographers and nature lovers alike on how to capture the perfect sunset shot in a forest setting', image: 'mountains-5946500_640.jpg' },
-    { title: 'Article 3', description: 'Description 3', image: 'path/to/image3.jpg' },
-    { title: 'Article 4', description: 'Description 4', image: 'path/to/image4.jpg' },
-    { title: 'Article 5', description: 'Description 5', image: 'path/to/image5.jpg' },
-    { title: 'Article 6', description: 'Description 6', image: 'path/to/image6.jpg' },
-    /*{ title: 'Article 7', description: 'Description 7', image: 'path/to/image7.jpg' },
-    { title: 'Article 8', description: 'Description 8', image: 'path/to/image8.jpg' },
-    { title: 'Article 9', description: 'Description 9', image: 'path/to/image9.jpg' },
-    { title: 'Article 10', description: 'Description 10', image: 'path/to/image10.jpg' },
-    { title: 'Article 11', description: 'Description 11', image: 'path/to/image11.jpg' },
-    { title: 'Article 12', description: 'Description 12', image: 'path/to/image12.jpg' },
-    { title: 'Article 13', description: 'Description 13', image: 'path/to/image13.jpg' },
-    { title: 'Article 14', description: 'Description 14', image: 'path/to/image14.jpg' },
-    { title: 'Article 15', description: 'Description 15', image: 'path/to/image15.jpg' },
-    { title: 'Article 16', description: 'Description 16', image: 'path/to/image16.jpg' },
-    { title: 'Article 17', description: 'Description 17', image: 'path/to/image17.jpg' },
-    { title: 'Article 18', description: 'Description 18', image: 'path/to/image18.jpg' }
-*/
+    { title: 'Article', description: 'Description', image: 'path/to/image3.jpg' },
+    { title: 'Article', description: 'Description', image: 'path/to/image4.jpg' },
+    { title: 'Article', description: 'Description', image: 'path/to/image5.jpg' },
+    { title: 'Article', description: 'Description', image: 'path/to/image6.jpg' },
+
 ];
 
 const articlesPerPage = 2;
